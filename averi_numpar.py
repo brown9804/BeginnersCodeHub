@@ -1,7 +1,7 @@
 correcto = True
 while (correcto == True):
 	try:
-		num = int(input("Dgiite un número: "))  
+		num = int(input("Digite un número: "))  
 		if(num != 0) and (num % 2 == 0):
 			print ("El número: ", num, " es par")
 		elif (num == 0):
