@@ -41,5 +41,9 @@ desvia_calc = desvia_estan(lista)
 print ("Vector: ",lista)
 print ("Mediana: ", mediana_calc)
 print ("Media Aritmética: ", media_a) 	
+#Beneficios de la varianza:
+#1. Cuando existen diferencias entre los datos abismales es muy bueno elevar esta diferencia al cuadrando (recordando que 
+#esta diferencia es la desviación estándar)
+#2. Cuando puede que existan valores negativos entonces al elevar la difencia al cuadrado hace que sea positiva
 print ("Varianza: ", varianza_calc)
 print ("Desviación estándar: ",  desvia_calc)
