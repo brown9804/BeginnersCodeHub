@@ -11,6 +11,6 @@ while (correcto == True):
 			print ("El número: ", num, " es impar")
 		correcto = False
 	except ValueError as error:
-		print ("No puedo trabajar con variables ni números reales ", error)
+		print ("No puedo trabajar con variables ni números imaginarios ", error)
 	except ZeroDivisionError  as mistake:
 		print ("Ingrese otro valor que no sea cero ", mistake)
