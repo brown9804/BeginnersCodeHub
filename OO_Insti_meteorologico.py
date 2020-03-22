@@ -20,7 +20,7 @@ class Estacion():
 		if self.cantidad[0]==0:
 			promedio_seca = self.cantidad[1]/self.veces[1]
 			print(self.nombre,"	", "0.00", promedio_seca)
-		elif(self.cantidad[1]==0)
+		elif(self.cantidad[1]==0):
 			promedio_lluvioso = self.cantidad[0]/self.veces[0]
 			print(self.nombre, promedio_lluvioso, "0.00")
 		elif(self.cantidad[0] == 0 and self.cantidad[1]==0):
