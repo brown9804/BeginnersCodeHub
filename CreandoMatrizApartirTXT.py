@@ -29,7 +29,7 @@ def leerArchivo(nombreArchivo, columnas, filas):
 
 
 
-#Dado que el archivo ya existe lo unico que se requiere es imprimir la matriz
+#Dado que el archivo ya existe lo unico que se necesita es imprimir la matriz
 #para lo cual se debe crear una funcion
 
 arhivoAExtraer = input("Digite el nombre del archivo a leer junto con su extensión siendo esta (.txt)\n")
