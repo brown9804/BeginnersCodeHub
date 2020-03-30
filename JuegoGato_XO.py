@@ -1,6 +1,6 @@
 #Se crea un gato 3x3 es decir de 3 filas con 3 columnas. Se realiza mediante definiciones sucesivo a su implementación.
 
-#Se ejcuta mediante el comando python3 XO_GameGato.py
+#Se ejcuta mediante el comando python3 JuegoGato_XO.py
 
 
 #Se crea una una matriz nxn 
