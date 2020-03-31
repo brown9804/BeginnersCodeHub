@@ -1,6 +1,7 @@
 #Python3
 
 #Ejemplifica el uso de la propiedad de Object Oriented de Python
+# Modela la precipitación de 3 lugares por temporada alta y baja
 
 ########				CLASES				########
 class Estacion():
