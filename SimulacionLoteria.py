@@ -1,6 +1,15 @@
+#Python3 
+
+#Este algoritmo permite representar la forma en la que se realiza el sorteo de loteria, grosso modo cualquier sorteo.
+
+###### 					IMPORTANDO PAQUETES 					######
 from random import *
 
+
+###### 					IMPLEMENTANDO 					######
+
 num = input("Digite el número que desea jugar ")
+
 if int(num) in range (0,100):
 	veces = input("Cuántos sorteos desea jugar? ")
 	veces = int(veces)
