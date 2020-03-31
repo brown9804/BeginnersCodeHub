@@ -1,4 +1,12 @@
+#Python3 
+
+#Creando un diseño de Baticircuito
+
+######                                  IMPORTANTO PAQUETES                              ######    
 import numpy as np
+
+######                                  COLOCANDO VALORES DE CORRIENTES                              ######    
+
 
 i1 = 0.001
 i2 = 0.002
@@ -11,10 +19,12 @@ r3 = 3000
 r4 = 4000
 r5 = 5000
 
+
 corriente = np.array([-i1, 0, i5, -i5, 0, i1, 0, 0, -i2, 0, i2, i3, 0, -i4, i4, 0, -i3, 0])
 
 # n1 n2 n3  n4 n5 n6 n7 n8 n9 n10 n11 n12 n13 n14 n15 n16 n17 n18
 
+######                                  VALOR DE TENSION O DIFERENCIA DE POTENCIAL ELECTRICO                              ######    
 
 tension = np.array([[17/12000, -1/r3, 0, 0, 0, 0, 0, -1/r2, -1/r4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [-1/r3, 9/4000, -1/750, -1/r3, 0, -1/r4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -34,6 +44,8 @@ tension = np.array([[17/12000, -1/r3, 0, 0, 0, 0, 0, -1/r2, -1/r4, 0, 0, 0, 0, 0
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1/r4, 0, -1/1875, -1/r2, 97/60000, -1/r3, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, -1/r5, -1/r4, 0, 0, 0, 0, 0, -1/r3, 31/30000, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, -1/r5, 0, 0, -1/r3, -1/r2, 0, 0, 0, 31/30000]])
+
+######                                  CREANDO DISENO                              ######    
 
 p = np.linalg.solve(tension, corriente)
 print(p)
