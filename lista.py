@@ -1,5 +1,12 @@
+#Python3 
+
+# ALgoritmo permite ingresar elementos a una lista vacia 
+
 correcto = True
 lista = []
+print("Algoritmo que permite ingresar numeros a una lista, estos deben ser enteros, el ciclo se detiene cuando se ingresa algo diferente.")
+
+#ciclo continua si se ingresan numeros enteros 
 while (correcto == True):
 	try:	
 		num = ""
