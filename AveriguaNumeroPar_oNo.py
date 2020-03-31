@@ -1,4 +1,10 @@
+#Python3
+
+#Permite analizar si el numero ingresado es par
+
 correcto = True
+
+#Ciclo para averiguar si los numeros digitados son par 
 while (correcto == True):
 	try:
 		num = int(input("Digite un número: "))  
