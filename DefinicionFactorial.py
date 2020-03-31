@@ -1,5 +1,8 @@
+#Python3 
 
+#Algoritmo para el calculo del factorial de un numero.
 
+######				DEFINICIONES				######
 def factorial(x,n):
 
 	if(n>0):
@@ -9,6 +12,8 @@ def factorial(x,n):
 	else:
 		x=1
 	return x
+
+######				IMPLEMENTANDO				######
 
 try:
 	num = int(raw_input("Digite un numero "))
