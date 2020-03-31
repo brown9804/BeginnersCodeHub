@@ -1,4 +1,8 @@
+#Python3
+
+#Algoritmo para desplegar las diferentes tablas de multiplicar.
 num = input ("Ingrese el número de tabla de multiplicar que desea imprimir: ")
+
 
 while (int(num) >= 0):
 	print ("Tabla del " + num)	
