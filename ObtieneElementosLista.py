@@ -1,5 +1,13 @@
+#Python3
+
+# Permite obtener valores de una lista 
+
+#Condicion de verdadero para finalizar un ciclo
 correcto = True 
+#Se crea el arreglo
 lista = []
+
+#Inicia el ciclo
 while (correcto == True):
 	try:
 		num = ""
