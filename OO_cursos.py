@@ -1,3 +1,9 @@
+#Python3
+
+# Ejemplo de Manipulacion Base de datos curso utilizando Object Oriented de Python, este algoritmo recibe un archivo .txt 
+
+###### 				CLASES 				######
+
 class Curso():
     def __init__(self, nombre, año, semestre):
         self.nombre = nombre
@@ -70,8 +76,8 @@ class Curso():
         self.imprimir_notas(self.perdieron)
         
 
-
-####Debido a la manera en la que se programó pegue los giguientes datos en un documento con extensión ".txt" sin el "#" ya que es para comentar.
+####Considere estos datos como un ejemplo
+####Debido a la manera en la que se programó pegue los siguientes datos en un documento con extensión ".txt" sin el "#" ya que es para comentar.
 #CI0202, B601234, 85
 #CI0202, B607777, 50
 #CI0101, B602222, 90
@@ -88,18 +94,27 @@ class Curso():
 #CI0202, B684432, 99
 #CI0101, B666555, 85
 
+###### 				IMPLEMENTANDO 				######
+
+#Brindandole el nombre a los cursos, año, semestre
 CI0202 = Curso("Principos de Informática", 2018, 1)
 CI0101 = Curso("Introduccion a Microcomputadores", 2018, 1)
-    
+ 
+#Abre base de datos/archivo
 archivo = open("notas2cursos.txt", "r")
+
+#leyendo todas las lineas de la base de datos/archivo
 for línea in archivo:
     curso, carnet, nota = línea.split(",")
     if curso == "CI0202":
         CI0202.agregar_alumno(carnet, int(nota))
     elif curso == "CI0101":
         CI0101.agregar_alumno(carnet, int(nota))
+
+#Cerrando el archivo
 archivo.close()
 
+## Implementando las definiciones las cuales realizan lo que su nombre indica
 CI0101.imprimir_notas_curso()
 CI0101.imprimir_promedio()
 CI0101.calcula_mejores_promedios()
@@ -108,6 +123,7 @@ CI0101.calcula_ampliacion()
 CI0101.imprimir_ampliacion()
 CI0101.calcula_perdieron_curso()
 CI0101.imprimir_perdieron()
+#imprime una linea en blanco
 print()
 CI0202.imprimir_notas_curso()
 CI0202.imprimir_promedio()
@@ -117,4 +133,5 @@ CI0202.calcula_ampliacion()
 CI0202.imprimir_ampliacion()
 CI0202.calcula_perdieron_curso()
 CI0202.imprimir_perdieron()
+#imprime una linea en blanco
 print()
