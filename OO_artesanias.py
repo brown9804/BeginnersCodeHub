@@ -1,3 +1,8 @@
+#Python3 
+
+#Este ejemplo crea un archivo txt con los datos de una franquicia de tiendas, y manipula los datos 
+# utilizando Object Oriented de Python
+
 #Para crear el archivo
 archivo = open("Datos.txt", "w")
 archivo.write("Jacó, 2018/01/03, 45000\n")
@@ -9,6 +14,8 @@ archivo.write("Jacó, 2018/04/13, 5000\n")
 archivo.write("Jacó, 2018/02/13, 25000\n")
 archivo.write("Tamarindo, 2018/01/20, 23000\n")
 archivo.close()
+
+###### 				CLASES 				######
 
 class Tienda():
 	def __init__(self, nombre):
@@ -76,6 +83,9 @@ class Negocio():
 		print("Tienda		Alta		Baja")
 		self.jaco.imprimir_promedios()
 		self.tamarindo.imprimir_promedios()
+
+		
+###### 				IMPLEMENTACION 				######
 
 artesanias = Negocio("   Artesanías de Costa Rica  ")
 artesanias.cargar_archivo("Datos.txt")
