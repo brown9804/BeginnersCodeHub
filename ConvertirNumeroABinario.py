@@ -1,3 +1,7 @@
+#Python3
+
+#Algoritmo para pasar numero entero a binario
+
 dividendo = input("Ingrese el número que desea pasar a binario, para esto el número debe ser mayor que cero ")
 dividendo = int(dividendo)
 
