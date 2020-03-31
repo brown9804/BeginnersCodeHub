@@ -1,8 +1,16 @@
+#Python3
+
+#Permite calcular cuantos años han sido bisiestos en un rango de años 
+
+######					DEFINICIONES 				######
 def bisiesto(year):
 	if (year % 400 == 0) or ((year % 4 == 0) and (year % 100 != 0)):
 		return True
 	else:
 		return False
+
+######					IMPLEMENTACION 				######
+	
 an1 = int(input("Digite el año mayor que desea comparar "))
 an2 = int(input("Digite el año menor "))
 dif = an1 - an2
