@@ -1,7 +1,16 @@
+#Python3 
+
+# Simula el juego de Black Jack 
+
+######				IMPORTANDO PAQUETES				######
 import os
 import random
 
+######				DEFINIENDO RONDAS				######
+
 ronda = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]*4
+
+######				DEFINICIONES				######
 
 def deal(ronda):
 	mano = []
@@ -56,12 +65,14 @@ def hit(mano):
 	mano.append(carta)
 	return mano
 
+#Limpia los valores ya presentes 
 def clear():
 	if os.name == 'nt':
 		os.system('CLS')
 	if os.name == 'posix':
 		os.system('clear')
 
+#Imprime los resultados 
 def print_results(dealer_mano, jugador_mano):
 	clear()
 	print ("El dealer tiene una mano de " + str(dealer_mano) + " para un total de " + str(total(dealer_mano)))
@@ -96,7 +107,7 @@ def score(dealer_mano, jugador_mano):
 	elif total(jugador_mano) > total(dealer_mano):
 		print_results(dealer_mano, jugador_mano)			   
 		print ("Felicidades, acabas de ganar porque tienes un puntaje mayor\n")		
-
+#Juego
 def game():
 	decide = 0
 	clear()
@@ -124,6 +135,8 @@ def game():
 
 			print ("Hasta luego!")
 			exit()
-	
+
+######				IMPLEMENTANDO				######
+
 if __name__ == "__main__":
 	game()
