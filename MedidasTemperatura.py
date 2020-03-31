@@ -5,6 +5,7 @@ Created on Tue Sep 18 14:35:33 2018
 
 @author: brown9804
 """
+############ 			DEFINICIONES				#######
 
 #def rankineAFahrenheit(rankine):
  #   fanh = rankine -459.67
@@ -52,7 +53,11 @@ def esencial():
 					temperatura += incremento
 		
 		imprimir = bool(int(input("¿Desea imprimir otra tabla?\n1 - Sí\n0 - No\n")))
-        	
+
+		
+		
+####### 			IMPLEMENTACION				#######
+   	
 esencial()
 
 
