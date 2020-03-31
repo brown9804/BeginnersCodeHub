@@ -1,3 +1,8 @@
+#Python3 
+
+#Manipula datos de una base de un curso por medio de definiciones. Obtiene los valores de un archivo de texto.
+
+######					DEFINICIONES 					######
 def leer_notas(nombre_archi):
 	notas = [ ]
 	archivo = open(nombre_archi, "r")
@@ -53,6 +58,7 @@ def repetir_curso(mat):
 	return repe
 
 
+######					CREANDO ARCHIVO DE TEXTO 					######
 
 archivo = open("Notas.txt", "w")
 
@@ -66,6 +72,8 @@ archivo.write("B555555, 65\n")
 archivo.write("B601234, 85\n") 
 
 archivo.close()
+
+######					IMPLEMENTACION 					######
 
 
 mat = leer_notas("Notas.txt")
