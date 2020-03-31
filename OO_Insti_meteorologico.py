@@ -1,3 +1,8 @@
+#Python3
+
+#Ejemplifica el uso de la propiedad de Object Oriented de Python
+
+########				CLASES				########
 class Estacion():
 	def __init__(self, nombre):
 		self.nombre = nomnbre
@@ -68,7 +73,8 @@ class Inst.m():
 		self.chirripo.imprimir_promedio()
 		self.liberia.imprimir_promedio()
 
-#programa principal
+########				IMPLEMENTACION				########
+
 place= Inst.m("Precipación por temporada")
 #esta linea es para cargar el arhivo que desea leer place.cargar_archivo("nombre del archivo.txt")
 place.mostrar_resultados()
