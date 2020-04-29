@@ -1,4 +1,4 @@
-#se defijne una lista
+#se define una lista
 lista = [25, 12, 15, 23, 24, 39, 13, 31, 19, 16]
 #se ordenan los elementos de menor a mayor 
 lista.sort()
