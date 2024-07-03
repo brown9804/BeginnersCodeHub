@@ -1,4 +1,4 @@
-# Python Various Algorithms
+# Beginners Code Hub
 
 Costa Rica
 
@@ -9,5 +9,4 @@ Belinda Brown, belindabrownr04@gmail.com
 
 ----------
 
-This folder contains some examples of how certain properties and algorithm implementations work using the Python language. All steps are commented.
-
+This repository contains examples of various algorithms implemented in Python, C, and other languages. The main goal of this repository is to provide insights and help beginners understand the basics of algorithms.
